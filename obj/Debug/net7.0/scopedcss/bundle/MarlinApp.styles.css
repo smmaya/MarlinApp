@@ -1,0 +1,189 @@
+/* _content/MarlinApp/Shared/MainLayout.razor.rz.scp.css */
+.page[b-hdobo7ocby] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-hdobo7ocby] {
+    flex: 1;
+}
+
+.sidebar[b-hdobo7ocby] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-hdobo7ocby] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-hdobo7ocby]  a, .top-row .btn-link[b-hdobo7ocby] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-hdobo7ocby] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-hdobo7ocby] {
+        display: none;
+    }
+
+    .top-row.auth[b-hdobo7ocby] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-hdobo7ocby], .top-row .btn-link[b-hdobo7ocby] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-hdobo7ocby] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-hdobo7ocby] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-hdobo7ocby] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-hdobo7ocby], article[b-hdobo7ocby] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+ul[b-hdobo7ocby] {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li[b-hdobo7ocby] { float: left; }
+
+li a[b-hdobo7ocby], .dropbtn[b-hdobo7ocby] {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover[b-hdobo7ocby], .dropdown:hover .dropbtn[b-hdobo7ocby] {
+    background-color: red;
+}
+
+li.dropdown[b-hdobo7ocby] {
+    display: inline-block;
+}
+
+.dropdown-content[b-hdobo7ocby] {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a[b-hdobo7ocby] {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover[b-hdobo7ocby] {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content[b-hdobo7ocby] { display: block; }
+/* _content/MarlinApp/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-w1zddhjj00] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-w1zddhjj00] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-w1zddhjj00] {
+    font-size: 1.1rem;
+}
+
+.oi[b-w1zddhjj00] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-w1zddhjj00] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-w1zddhjj00] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-w1zddhjj00] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-w1zddhjj00]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-w1zddhjj00]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-w1zddhjj00]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-w1zddhjj00] {
+        display: none;
+    }
+
+    .collapse[b-w1zddhjj00] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-w1zddhjj00] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}

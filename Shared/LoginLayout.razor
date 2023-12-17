@@ -1,0 +1,24 @@
+@inherits LayoutComponentBase
+
+<div class="page page-background-class">
+    @if (show)
+    {
+        <NavMenu />
+        <div class="top-row px-4 auth text-end">
+            <LoginDisplay/>
+        </div>
+    }
+    <div class="main">
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</div>
+
+@code{
+    bool show = false;
+    protected override void OnInitialized()
+    {
+    }
+}
+
